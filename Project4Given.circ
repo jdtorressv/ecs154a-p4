@@ -1440,6 +1440,7 @@ a08003 109
     <wire from="(620,340)" to="(620,350)"/>
     <wire from="(820,450)" to="(820,520)"/>
     <wire from="(820,540)" to="(1010,540)"/>
+    <wire from="(650,240)" to="(650,310)"/>
     <wire from="(800,420)" to="(800,450)"/>
     <wire from="(820,540)" to="(820,570)"/>
     <wire from="(540,320)" to="(640,320)"/>
@@ -1447,11 +1448,11 @@ a08003 109
     <wire from="(440,190)" to="(440,270)"/>
     <wire from="(830,650)" to="(830,670)"/>
     <wire from="(740,330)" to="(740,410)"/>
+    <wire from="(660,120)" to="(660,140)"/>
     <wire from="(1010,460)" to="(1010,540)"/>
     <wire from="(180,220)" to="(210,220)"/>
     <wire from="(800,450)" to="(820,450)"/>
     <wire from="(540,320)" to="(540,360)"/>
-    <wire from="(470,340)" to="(560,340)"/>
     <wire from="(840,410)" to="(840,520)"/>
     <wire from="(700,420)" to="(700,460)"/>
     <wire from="(720,410)" to="(740,410)"/>
@@ -1464,23 +1465,24 @@ a08003 109
     <wire from="(1020,460)" to="(1020,520)"/>
     <wire from="(410,230)" to="(410,280)"/>
     <wire from="(470,290)" to="(470,340)"/>
+    <wire from="(510,350)" to="(510,400)"/>
     <wire from="(930,290)" to="(930,340)"/>
     <wire from="(840,520)" to="(1020,520)"/>
-    <wire from="(650,220)" to="(650,230)"/>
     <wire from="(440,270)" to="(490,270)"/>
     <wire from="(840,340)" to="(840,410)"/>
     <wire from="(440,150)" to="(440,160)"/>
     <wire from="(470,340)" to="(470,350)"/>
     <wire from="(950,300)" to="(950,330)"/>
+    <wire from="(520,340)" to="(560,340)"/>
     <wire from="(710,420)" to="(710,450)"/>
     <wire from="(690,280)" to="(980,280)"/>
     <wire from="(590,280)" to="(690,280)"/>
-    <wire from="(650,230)" to="(650,310)"/>
     <wire from="(620,520)" to="(730,520)"/>
     <wire from="(690,280)" to="(690,320)"/>
     <wire from="(790,420)" to="(790,460)"/>
     <wire from="(540,360)" to="(560,360)"/>
     <wire from="(600,340)" to="(620,340)"/>
+    <wire from="(470,340)" to="(500,340)"/>
     <wire from="(1080,310)" to="(1090,310)"/>
     <wire from="(710,450)" to="(730,450)"/>
     <wire from="(800,330)" to="(950,330)"/>
@@ -1504,6 +1506,7 @@ a08003 109
       <a name="width" val="3"/>
       <a name="max" val="0x4"/>
     </comp>
+    <comp lib="1" loc="(520,340)" name="Controlled Buffer"/>
     <comp lib="0" loc="(1000,440)" name="Splitter">
       <a name="facing" val="south"/>
     </comp>
@@ -1524,6 +1527,14 @@ a08003 109
     <comp lib="2" loc="(1020,300)" name="Multiplexer">
       <a name="select" val="2"/>
     </comp>
+    <comp lib="0" loc="(660,120)" name="Pin">
+      <a name="facing" val="south"/>
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(660,140)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="StartSig"/>
+    </comp>
     <comp lib="1" loc="(440,190)" name="NOT Gate">
       <a name="facing" val="south"/>
     </comp>
@@ -1539,10 +1550,6 @@ a08003 109
       <a name="label" val="CLK"/>
     </comp>
     <comp lib="1" loc="(680,350)" name="NOT Gate"/>
-    <comp lib="0" loc="(650,230)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="1" loc="(830,650)" name="OR Gate">
       <a name="facing" val="south"/>
       <a name="size" val="30"/>
@@ -1551,6 +1558,10 @@ a08003 109
     <comp lib="0" loc="(440,150)" name="Tunnel">
       <a name="facing" val="south"/>
       <a name="label" val="DisableSh"/>
+    </comp>
+    <comp lib="0" loc="(650,240)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="StartSig"/>
     </comp>
     <comp lib="0" loc="(700,460)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -1565,6 +1576,10 @@ a08003 109
       <a name="max" val="0x4"/>
     </comp>
     <comp lib="4" loc="(490,280)" name="Shift Register"/>
+    <comp lib="0" loc="(510,400)" name="Tunnel">
+      <a name="facing" val="north"/>
+      <a name="label" val="StartSig"/>
+    </comp>
     <comp lib="0" loc="(410,230)" name="Pin">
       <a name="facing" val="south"/>
       <a name="tristate" val="false"/>
