@@ -1493,6 +1493,7 @@ a08003 109
     <wire from="(740,410)" to="(740,570)"/>
     <wire from="(620,350)" to="(650,350)"/>
     <wire from="(950,300)" to="(980,300)"/>
+    <wire from="(180,280)" to="(200,280)"/>
     <wire from="(1020,300)" to="(1090,300)"/>
     <wire from="(620,350)" to="(620,410)"/>
     <wire from="(410,280)" to="(490,280)"/>
@@ -1513,6 +1514,9 @@ a08003 109
     <comp lib="0" loc="(830,670)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="DisableSh"/>
+    </comp>
+    <comp lib="0" loc="(200,280)" name="Tunnel">
+      <a name="label" val="Input"/>
     </comp>
     <comp lib="0" loc="(470,350)" name="Tunnel">
       <a name="facing" val="north"/>
@@ -1543,6 +1547,9 @@ a08003 109
       <a name="label" val="CLK"/>
     </comp>
     <comp lib="4" loc="(1090,300)" name="Shift Register"/>
+    <comp lib="0" loc="(180,280)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="1" loc="(640,320)" name="Controlled Buffer">
       <a name="facing" val="west"/>
     </comp>
@@ -1575,14 +1582,14 @@ a08003 109
       <a name="width" val="3"/>
       <a name="max" val="0x4"/>
     </comp>
+    <comp lib="0" loc="(410,230)" name="Tunnel">
+      <a name="facing" val="south"/>
+      <a name="label" val="Input"/>
+    </comp>
     <comp lib="4" loc="(490,280)" name="Shift Register"/>
     <comp lib="0" loc="(510,400)" name="Tunnel">
       <a name="facing" val="north"/>
       <a name="label" val="StartSig"/>
-    </comp>
-    <comp lib="0" loc="(410,230)" name="Pin">
-      <a name="facing" val="south"/>
-      <a name="tristate" val="false"/>
     </comp>
     <comp lib="4" loc="(600,340)" name="D Flip-Flop"/>
     <comp lib="1" loc="(800,330)" name="NOT Gate"/>
