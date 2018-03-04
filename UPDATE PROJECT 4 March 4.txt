@@ -1,0 +1,6 @@
+Updated Clock Divisor
+1. Changed wrap around, to set to data value at 1 so it stays in cycle with other components. Not sure if this is how the clock divisor is supposed to work yet, but made sure its in sync.
+
+Updated SECDED
+
+USED 2 spliters and combinational logic to make SECDED ENCODING FROM 16bit to 22bit.
