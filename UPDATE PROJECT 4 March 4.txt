@@ -3,5 +3,7 @@ Updated Clock Divisor
 2. Used MUX to select which clock value is outputed based on Baud Rate Divisor.
 
 Updated SECDED
+1. USED 2 spliters and combinational logic to make SECDED ENCODING FROM 16bit to 22bit.
 
-USED 2 spliters and combinational logic to make SECDED ENCODING FROM 16bit to 22bit.
+Update FIFO
+1. Made a new fifo from scratch that loads,unloads, adds in serial, counts number of variables in FIFO.
